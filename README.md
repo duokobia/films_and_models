@@ -45,7 +45,7 @@ That is it! The application should run on your local server.
 
 # How to use the web application
 
-From the landing page, click on any of the tabs in the navigation bar to go to their respective pages. These pages each contains cards with brief information about what their names connote. For example, clicking on the 'Models' tab takes you to a new page that displays availble models inside cards in grid form. To get more details about each model, click on the 'details' button in each card. This will take you to another page where details on the model clicked is displayed.
+From the landing page, click on any of the tabs in the navigation bar to go to their respective pages. These pages each contains cards with brief information about what their names connote. For example, clicking on the 'Models' tab takes you to a new page that displays available models inside cards in grid form. To get more details about each model, click on the 'details' button in each card. This will take you to another page where details on the model clicked is displayed.
 
 While in the desired page, you will see a couple of related films displayed below the model details. Hover your cursor on them to find out each link. Click on any of the links to find out more information about the film described in the link.
 
