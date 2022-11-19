@@ -1,0 +1,11 @@
+.hero-bg{
+    background: url('../../assets/images/movieBanner.jpg');
+    /* Photo by <a href="https://unsplash.com/@fkaregan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samuel Regan-Asante</a> on <a href="https://unsplash.com/s/photos/movie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    width: 100vw;
+    height: 100vh;
+}
+.hero-text{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+}
