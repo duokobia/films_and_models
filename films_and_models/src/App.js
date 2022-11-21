@@ -1,18 +1,30 @@
 import React from 'react';
+import {Routes, Route} from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Hero from './components/hero/Hero';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/home/Home';
+import Films from './pages/films/Films';
+import Models from './pages/models/Models';
+import ErrorHandlingPage from './pages/errorHandlingPage/ErrorHandlingPage';
+
 
 
 function App() {
   return (
-    <div className="App">
-       <Header />
-       <Hero />
-       <Footer />
-    </div>
+    <>
+     <Header />
+     <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='films' element={<Films />} />
+      <Route path='models' element={<Models />} />
+      <Route path='*' element={<ErrorHandlingPage />} />
+    </Routes>
+    <Footer />
+
+    </>
+
   );
 }
 

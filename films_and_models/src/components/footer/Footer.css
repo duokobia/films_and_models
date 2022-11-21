@@ -1,0 +1,16 @@
+.footer-logo{
+    color: rgb(240, 42, 42);
+}
+.navFooterLogoAnd{
+    display: inline-block;
+    color: lightgray;
+}
+.navFooterLogoAnd:hover{
+    color: rgb(240, 42, 42);
+}
+.nav-linked{
+    color: white;
+}
+.nav-linked:hover{
+    color: lightgray;
+}

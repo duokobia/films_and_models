@@ -1,0 +1,52 @@
+
+.navLogo{
+    color: red;
+    font-size: 1.8rem;
+}
+.navLogoAnd{
+    color:white;
+    font-size: 1.8rem;
+}
+.navLogoAnd:hover{
+    color:red;
+}
+.nav-link {
+    font-size: 1.3rem;
+    text-decoration: none !important;
+}
+.nav-link:hover {
+    color: red;
+    font-size: 1.3rem;
+    border: 0;
+}
+nav a{
+    margin-left: 1rem;
+    text-decoration: none;
+}
+nav .active a{
+    color: red !important; 
+    font-size: 1.3rem;
+    border: 0;
+    border-bottom: 3px solid white;
+}
+.offcanvas{
+    background-color: rgb(71, 63, 63);
+    color: white;
+    width: 100vw;
+}
+.offcanvas-title{
+    color: lightgray
+}
+.offcanvasLogoAnd{
+    color: rgb(240, 42, 42);
+}
+.offcanvas-body nav a {
+    color: rgb(240, 42, 42);
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
