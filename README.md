@@ -15,6 +15,7 @@ An improvement on this version of the application will accept names of models or
 The following frameworks were used for faster development of the web application:
 
 - ReactJs
+- React-router-dom v6
 - Bootstrap v5.2
 - Axios
 
