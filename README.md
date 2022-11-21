@@ -15,6 +15,7 @@ An improvement on this version of the application will accept names of models or
 The following frameworks were used for faster development of the web application:
 
 - ReactJs
+- React-router-dom v6
 - Bootstrap v5.2
 - Axios
 
@@ -33,11 +34,13 @@ While implementing the web application, the following were the challenges I enco
 To run the app locally, please follow the steps below:
 
 1. Git clone the repository on your terminal:
-  git clone <url>
+  git clone https://github.com/duokobia/films_and_models.git
   
 2. cd films_and_models
 
-3. npm start
+3. npm install
+
+4. npm start
 
 That is it! The application should run on your local server.
 
@@ -57,12 +60,13 @@ You can switch to any page desired at anytime using the navigation tab.
 This web application was solely implemented by me following the XXXX XXX XXXXX requirements. I have drawn inspiration from a couple of resources which includes:
 
 websites:
+- https://unsplash.com/
 - https://www.netflix.com/ng/
 - https://www.tesla.com/
 - https://businessnamegenerator.com/project-name-generator/
 
 bloggers:
-- https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+- https://www.freecodecamp.org/
 
 vbloggers:
 - Youtube resources.
