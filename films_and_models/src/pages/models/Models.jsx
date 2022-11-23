@@ -1,11 +1,11 @@
 import React from 'react';
-import Shelf from '../../components/shelf/Shelf';
+import ModelShelf from '../../components/shelf/ModelShelf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Models() {
   return (
     <div className="models">
-    <Shelf />
+    <ModelShelf />
  </div>
   )
 };

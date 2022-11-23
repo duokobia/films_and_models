@@ -1,11 +1,11 @@
 import React from 'react';
-import Shelf from '../../components/shelf/Shelf';
+import FilmShelf from '../../components/shelf/FilmShelf';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Films() {
   return (
     <div className="films">
-    <Shelf />
+    <FilmShelf />
  </div>
   )
 }

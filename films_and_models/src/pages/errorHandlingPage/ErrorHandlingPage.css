@@ -1,0 +1,33 @@
+.errorPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: red;
+    height: 87vh;
+    width: 100vw;
+    font-size: 3rem;
+}
+.errorArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.errorParagraphBold{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+.errorParagraph{
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 400px) {
+    .errorPage{
+        height: 86vh;
+        font-size: 2rem;
+    }
+}
