@@ -1,9 +1,9 @@
-import React from 'react';
-import Hero from '../../components/hero/Hero';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Hero from "../../components/hero/Hero";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
-function Home() {
+const Home = () => {
   return (
     <div className="home">
        <Hero />

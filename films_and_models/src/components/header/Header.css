@@ -1,23 +1,24 @@
-
-.navLogo{
-    color: red;
+.navLogo a span.navLogoAnd {
     font-size: 1.8rem;
-}
-.navLogoAnd{
     color:white;
-    font-size: 1.8rem;
+    transition: all 0.2s ease-in-out 0s;
 }
-.navLogoAnd:hover{
-    color:red;
+.navLogo:hover a span.navLogoAnd {
+    color: red;
+    transition: all 0.2s ease-in-out 0s;
+}
+.navLogo a span.navLogoWord {
+    font-size: 1.8rem;
+    color: red;
+    transition: all 0.2s ease-in-out 0s;
+}
+.navLogo:hover a span.navLogoWord {
+    color:white;
+    transition: all 0.2s ease-in-out 0s;
 }
 .nav-link {
     font-size: 1.3rem;
     text-decoration: none !important;
-}
-.nav-link:hover {
-    color: red;
-    font-size: 1.3rem;
-    border: 0;
 }
 nav a{
     margin-left: 1rem;
@@ -27,7 +28,7 @@ nav .active a{
     color: red !important; 
     font-size: 1.3rem;
     border: 0;
-    border-bottom: 3px solid white;
+    border-bottom: 0.188rem solid white;
 }
 .offcanvas{
     background-color: rgb(71, 63, 63);

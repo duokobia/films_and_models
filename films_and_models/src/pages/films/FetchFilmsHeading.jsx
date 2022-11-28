@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-function FetchFilmsHeading() {
+const FilmDetailsHeading = () => {
 
   return (
     <div className="container col-xs-12 col-lg-8 my-5">
@@ -11,4 +11,4 @@ function FetchFilmsHeading() {
   )
 };
 
-export default FetchFilmsHeading;
+export default FilmDetailsHeading;

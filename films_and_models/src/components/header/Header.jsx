@@ -1,19 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/js/dist/collapse';
-import 'bootstrap/js/dist/offcanvas';
-import './Header.css';
+import React from "react";
+import { NavLink } from "react-router-dom"; 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/js/dist/collapse";
+import "bootstrap/js/dist/offcanvas";
+import "./Header.css";
 
 
- function Header() {
+const Header = () => {
   return (
     <div class = "sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
             <div class="container-fluid col-xs-12 col-lg-8 col-lg-offset-2">
-                <a class="navbar-brand h1 navLogo" href="#">
-                    Films<span className="navLogoAnd">&</span>Models
-                </a>
+                <h1 className="navLogo">
+                    <a class="navbar-brand" href="#">
+                        <span className="navLogoWord">Films</span><span className="navLogoAnd">&</span><span className="navLogoWord">Models</span> 
+                    </a>
+                </h1>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                 </button>

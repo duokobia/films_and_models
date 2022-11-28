@@ -1,8 +1,8 @@
 import React from 'react';
-import './ErrorHandlingPage.css';
+import "./ErrorHandlingPage.css";
 
 
-function ErrorHandlingPage() {
+const ErrorHandlingPage = () => {
 
   return (
     <div className="container-fluid bg-dark text-danger ">

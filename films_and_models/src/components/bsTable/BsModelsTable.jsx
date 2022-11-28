@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import * as ReactBootStrap from 'react-bootstrap';
-import './BsTable.css';
+import React, { useState, useEffect } from "react";
+import Table from "react-bootstrap/Table";
+import { Link } from "react-router-dom";
+import LoadingSpinner from "../loadingSpinner/LoadingSpinner";
+import "./BsModelsTable.css";
 
-function BsTable() {
+const BsModelsTable = () => {
 
     const [models, setModels] = useState([]);
+    const [Loading, setLoading] = useState(false);
+
     const url = "https://www.swapi.tech/api/people/";
 
     const LoadModelsData = async () => {
@@ -13,6 +17,7 @@ function BsTable() {
             const data = await res.json();
             console.log(data);
             setModels(data.results);
+            setLoading(true);
         }catch(err){
             console.error(err)
         }
@@ -29,21 +34,23 @@ function BsTable() {
       <tr key={index}>
         <td>{models.uid}</td>
         <td>{models.name}</td>
-        <td><a href={models.url}>
-              <button type="button" class="btn btn-success">
-                View Details
-              </button>
-            </a>
+        <td>
+            <Link 
+                to = {`/models/${models.uid}`}
+                  state = {{url: models.url}}>
+                  <a href={models.url}><button type="button"  class="btn btn-success">
+                      Details
+                      </button>
+                  </a>
+            </Link>
         </td>
       </tr>
     )
   };
 
   return (
-    <>
-    
-          <div className="container col-xs-12 col-lg-8 bsTableContainer my-3" >
-              <ReactBootStrap.Table striped bordered hover>
+         <div className="container col-xs-12 col-lg-8 bsModelTableContainer my-3" >
+            {Loading ? (<Table striped bordered hover>
               <thead>
                 <tr >
                   <th>Model ID</th>
@@ -54,12 +61,14 @@ function BsTable() {
               <tbody>
                 {models.map(modelInfo)}
               </tbody>
-            </ReactBootStrap.Table>
+            </Table>) 
+            : 
+            (
+              <LoadingSpinner />
+            )
+          }
         </div> 
-    
-    </>
-
   )
 };
 
-export default BsTable;
+export default BsModelsTable;

@@ -1,0 +1,13 @@
+.bsModelTableContainer{
+    padding: 1.8rem;
+    padding-bottom: 12rem;
+}
+
+@media only screen and (max-width: 50rem) {
+    .loadingSpinner{
+        padding-top: 3rem;
+    }
+    .loadingMessage{
+        font-size: 1.2rem;
+    }
+  }

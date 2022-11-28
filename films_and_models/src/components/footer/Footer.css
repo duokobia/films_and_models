@@ -1,16 +1,32 @@
-.footer-logo{
-    color: rgb(240, 42, 42);
+.footerLogo a{
+    text-decoration: none;
 }
-.navFooterLogoAnd{
-    display: inline-block;
+.footerLogo a span.footerLogoAnd {
+    color:white;
+    transition: all 0.2s ease-in-out 0s;
+}
+.footerLogo:hover a span.footerLogoAnd {
+    color: red;
+    transition: all 0.2s ease-in-out 0s;
+}
+.footerLogo a span.footerLogoWord {
+    color: red;
+    transition: all 0.2s ease-in-out 0s;
+}
+.footerLogo:hover a span.footerLogoWord {
+    color:white;
+    transition: all 0.2s ease-in-out 0s;
+}
+.pageFooter{
     color: lightgray;
 }
-.navFooterLogoAnd:hover{
-    color: rgb(240, 42, 42);
+.footerParagraph{
+    color: darkgray;
 }
-.nav-linked{
-    color: white;
+.footerListLink a{
+    text-decoration: none;
+    color: darkgray;
 }
-.nav-linked:hover{
+.footerListLink a:hover{
     color: lightgray;
 }

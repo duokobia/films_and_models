@@ -1,0 +1,11 @@
+.modelShelf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+@media only screen and (max-width: 25rem) {
+    .modelShelf{
+      margin: 5rem;
+    }
+  }
