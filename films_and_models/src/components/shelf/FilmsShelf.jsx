@@ -1,16 +1,16 @@
 import React from "react";
-import FetchFilmsHeading from "../../pages/films/FilmDetailsHeading";
 import BsFilmsTable from "../bsTable/BsFilmsTable";
+import PageContentTitle from "../pageContentTitle/PageContentTitle";
 
 
-const FilmShelf = () => {
+const FilmsShelf = () => {
   
   return (
     <>
-      <FetchFilmsHeading />
+      <PageContentTitle title = "Your favourite films of the year."/>
       <BsFilmsTable />
     </>
   )
 };
-export default FilmShelf;
+export default FilmsShelf;
 

@@ -1,9 +1,7 @@
 .filmDetailsPageContainer{
     padding-bottom: 12rem;
+    min-height: 42rem;
 }
 .filmModels{
     text-decoration: none;
-}
-.backToFilmsList{
-    font-size: 1.3rem;
 }

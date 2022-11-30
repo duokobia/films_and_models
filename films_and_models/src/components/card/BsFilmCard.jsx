@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 const BsFilmCard = () => {
   return (
-            <div className="container-fluid col-xs-12 col-lg-8 mt-5 ">
+            <div className="container-fluid col-xs-12 col-lg-8 mt-5">
                     <div className="row ms-2"> 
                         <div className="col-xs-12 col-lg-6 mt-5">
                             <Card className="text-bg-light">

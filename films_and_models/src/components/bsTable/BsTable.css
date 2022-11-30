@@ -1,6 +1,7 @@
-.bsModelTableContainer{
-    padding: 1.8rem;
-    padding-bottom: 12rem;
+.bsTableContainer{
+    padding-top: 1.8rem;
+    overflow-x: none;
+    overflow-y: auto;
 }
 
 @media only screen and (max-width: 50rem) {

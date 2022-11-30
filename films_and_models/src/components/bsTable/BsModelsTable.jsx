@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import LoadingSpinner from "../loadingSpinner/LoadingSpinner";
-import "./BsModelsTable.css";
+import "./BsTable.css";
 
 const BsModelsTable = () => {
 
@@ -38,10 +38,9 @@ const BsModelsTable = () => {
             <Link 
                 to = {`/models/${models.uid}`}
                   state = {{url: models.url}}>
-                  <a href={models.url}><button type="button"  class="btn btn-success">
+                 <button type="button"  class="btn btn-success">
                       Details
                       </button>
-                  </a>
             </Link>
         </td>
       </tr>
@@ -49,7 +48,7 @@ const BsModelsTable = () => {
   };
 
   return (
-         <div className="container col-xs-12 col-lg-8 bsModelTableContainer my-3" >
+         <div className="container col-xs-12 col-lg-8 min-vh-100 bsTableContainer my-3" >
             {Loading ? (<Table striped bordered hover>
               <thead>
                 <tr >
@@ -61,9 +60,8 @@ const BsModelsTable = () => {
               <tbody>
                 {models.map(modelInfo)}
               </tbody>
-            </Table>) 
-            : 
-            (
+            </Table>
+            ) : (
               <LoadingSpinner />
             )
           }

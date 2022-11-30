@@ -1,16 +1,17 @@
 import React from "react";
-import ModelsHeading from "../../pages/models/ModelsHeading";
 import BsModelsTable from "../bsTable/BsModelsTable";
+import PageContentTitle from "../pageContentTitle/PageContentTitle";
 
 
-const ModelShelf = () => {
+const ModelsShelf = () => {
+
   
   return (
     <>
-      <ModelsHeading />
+      <PageContentTitle title = "Top 10 models of the year and their details."/>
       <BsModelsTable />
     </>
   )
 };
-export default ModelShelf;
+export default ModelsShelf;
 

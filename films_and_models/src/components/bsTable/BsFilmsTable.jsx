@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
-import "./BsFilmsTable.css";
+import "./BsTable.css";
 import LoadingSpinner from "../loadingSpinner/LoadingSpinner";
 
 const BsFilmsTable = () => {
@@ -57,8 +57,9 @@ const BsFilmsTable = () => {
 
   return (
     <>
-         <div className="container col-xs-12 col-lg-8 bsFilmsTableContainer my-3" >
-            {Loading ? (<Table striped bordered hover>
+         <div className="container col-xs-12 col-lg-8 min-vh-100 bsTableContainer my-3" >
+            {Loading ? (
+            <Table striped bordered hover>
               <thead>
                 <tr >
                   <th>Episode ID</th>
@@ -72,9 +73,8 @@ const BsFilmsTable = () => {
               <tbody>
                 {films.map(filmInfo)}
               </tbody>
-            </Table>) 
-            : 
-            (
+            </Table>
+            ) : (
               <LoadingSpinner />
             )
           }

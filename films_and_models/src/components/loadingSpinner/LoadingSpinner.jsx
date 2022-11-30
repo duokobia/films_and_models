@@ -5,7 +5,7 @@ import Spinner from "react-bootstrap/Spinner";
 const LoadingSpinner = () => {
   return (
     <div className="my-auto loadingSpinner">       
-        <div className="row mx-auto my-5">
+        <div className="row mx-auto my-auto">
             <Spinner animation="border" variant="primary" size="lg" role="status"/>
             <Spinner animation="border" variant="secondary" size="lg" role="status" />
             <Spinner animation="border" variant="success" size="lg" role="status" />

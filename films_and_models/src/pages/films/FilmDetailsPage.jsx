@@ -1,15 +1,14 @@
 import React,{ useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import Spinner from "react-bootstrap/Spinner";
+import { useLocation } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import FilmDetailsHeading from "./FilmDetailsHeading";
 import "./FilmDetailsPage.css";
+import LoadingSpinner from "../../components/loadingSpinner/LoadingSpinner";
 
 
 const FilmDetailsPage = () => {
 
     const {urls} = useLocation().state;
-    const [Loading, setLoading] = useState(true);
+    const [Loading, setLoading] = useState(false);
     const [spec, setSpec] = useState([]);
   
     const filmData = async () => {
@@ -17,7 +16,7 @@ const FilmDetailsPage = () => {
         let models = await Promise.all(urls.map(url => fetch(url)));
         let nestedCharacterUrl = await Promise.all(models.map(model => model.json()))
         setSpec(nestedCharacterUrl);
-        setLoading(false);
+        setLoading(true);
         console.log(nestedCharacterUrl);
       }catch(err){
           console.error(err)
@@ -30,40 +29,23 @@ const FilmDetailsPage = () => {
 
   return (
     <>
-    {Loading ? (
-          <div className="my-auto loadingSpinner">
-                
-          <div className="row mx-auto my-5">
-              <Spinner animation="border" variant="primary" size="lg" role="status"/>
-              <Spinner animation="border" variant="secondary" size="lg" role="status" />
-              <Spinner animation="border" variant="success" size="lg" role="status" />
-              <Spinner animation="border" variant="danger" size="lg" role="status"/>
-              <Spinner animation="border" variant="warning" size="lg" role="status" />
-              <Spinner animation="border"  variant="info" size="lg" role="status"/>
-          </div>
-          <div className="row">
-              <p className="loadingMessage">Loading data. Please wait...</p>
-          </div>
-          
-        </div>
-        ) : ( 
-          <div className="container-fluid col-xs-12 col-lg-8 mt-2 filmDetailsPageContainer ">
-            <div className="row">
-              <FilmDetailsHeading />
-            </div>
+    {Loading ? ( 
+          <div className="container-fluid col-xs-12 col-lg-8 mt-2 min-vh-100 filmDetailsPageContainer">
             <div className="row">
             <div className="col-xs-12 col-lg-6 my-4 mx-auto">
                   <Card className="text-bg-light mb-5">
-                      <Card.Body className="mt-5 mb-4 mx-auto">
+                      <Card.Body className="mt-5 mb-4 fs-5 mx-auto">
                       <Card.Title  className="mb-4"><h2>All models in this film.</h2></Card.Title>
                       <Card.Subtitle className="mb-3 text-muted"><span className="ms-3">{spec.map((m) => <h5>Model Name: <a href="/films" className="filmModels ms-3">{m.name}</a> </h5>)}</span></Card.Subtitle>
-                      <Card.Link href="/films" className="backToFilmsList">Back to films' list</Card.Link>
+                      <Card.Link href="/films">Back to films' list</Card.Link>
                       </Card.Body>
                   </Card>
                 </div>
             </div>
           </div>
-        )
+        ) : (
+          <LoadingSpinner />
+        ) 
     }
     </>
   )

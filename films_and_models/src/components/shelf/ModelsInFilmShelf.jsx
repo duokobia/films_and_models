@@ -1,16 +1,16 @@
 import React from "react";
 import PageContentTitle from "../pageContentTitle/PageContentTitle";
-import ModelDetailsPage from "../../pages/models/ModelDetailsPage";
+import FilmDetailsPage from "../../pages/films/FilmDetailsPage";
 
 
-const ModelDetailsShelf = () => {
+const ModelsInFilmShelf = () => {
   
   return (
     <>
       <PageContentTitle title = "Details of your favourite model of the year."/>
-      <ModelDetailsPage />
+      <FilmDetailsPage />
     </>
   )
 };
-export default ModelDetailsShelf;
+export default ModelsInFilmShelf;
 

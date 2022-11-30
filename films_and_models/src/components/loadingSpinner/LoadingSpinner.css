@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 5rem;
+    width: auto;
+    min-height: 42rem;
 }
 .loadingMessage{
     font-size: 1.5rem;

@@ -1,3 +1,6 @@
+.pageFooter{
+    color: lightgray;
+}
 .footerLogo a{
     text-decoration: none;
 }
@@ -17,11 +20,11 @@
     color:white;
     transition: all 0.2s ease-in-out 0s;
 }
-.pageFooter{
-    color: lightgray;
-}
-.footerParagraph{
+.footerLogoParagraph{
     color: darkgray;
+}
+.footerHeadings{
+    font-size: 1.2rem;
 }
 .footerListLink a{
     text-decoration: none;
@@ -30,3 +33,4 @@
 .footerListLink a:hover{
     color: lightgray;
 }
+
