@@ -44,8 +44,8 @@ const BsFilmsTable = () => {
         <td>{film.release_date}</td>
         <td>
             <Link 
-                to = {`/films/${film.episode_id}`}
-                state = {{urls: film.characters}}>
+                to = {`/films/${film.episode_id}/${film.title}/`}
+                state = {{urls: film.characters, crawl : film.opening_crawl}}>
                   <button type="button" class="btn btn-success">
                       Details
                   </button>

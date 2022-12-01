@@ -1,14 +1,14 @@
 import React from "react";
 import PageContentTitle from "../pageContentTitle/PageContentTitle";
-import FilmDetailsPage from "../../pages/films/FilmDetailsPage";
+import AllModelsInAFilmCard from "../card/AllModelsInAFilmCard";
 
 
 const ModelsInFilmShelf = () => {
   
   return (
     <>
-      <PageContentTitle title = "Details of your favourite model of the year."/>
-      <FilmDetailsPage />
+      <PageContentTitle title = "All models in this film."/>
+      <AllModelsInAFilmCard />
     </>
   )
 };

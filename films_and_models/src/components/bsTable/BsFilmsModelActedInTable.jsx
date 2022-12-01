@@ -49,26 +49,29 @@ const BsFilmsModelActedInTable = () => {
 
   return (
     <>
-    {Loading ? ( 
-           <Table striped bordered hover>
-           <thead>
-             <tr >
-               <th>Episode ID</th>
-               <th>Film Title</th>
-               <th>Film Director</th>
-               <th>Film Producer</th>
-               <th>Film Release Date</th>
-               <th>Film Details</th>
-             </tr>
-           </thead>
-           <tbody>
-             {filmsIn.map(filmInfo)}
-           </tbody>
-         </Table> 
-        ) : (
-          <LoadingSpinner />
-        )
-      }
+     <div className="container col-xs-12 col-lg-8 min-vh-100 bsTableContainer my-3">
+          {Loading ? ( 
+                <Table striped bordered hover>
+                <thead>
+                  <tr >
+                    <th>Episode ID</th>
+                    <th>Film Title</th>
+                    <th>Film Director</th>
+                    <th>Film Producer</th>
+                    <th>Film Release Date</th>
+                    <th>Film Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filmsIn.map(filmInfo)}
+                </tbody>
+              </Table> 
+              ) : (
+                <LoadingSpinner />
+              )
+            }
+     </div>
+   
     </>
   )
 }
