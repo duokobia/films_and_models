@@ -38,7 +38,7 @@ To run the app locally, please follow the steps below:
 
 4. npm start
 
-That is it! The application should run on your local server.
+That is it! The application should run on your local server on http://localhost:3000.
 
 
 
