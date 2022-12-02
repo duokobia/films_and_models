@@ -1,11 +1,11 @@
 # films_and_models
 
-Films_and_models is a responsive reactJS web application that consumes APIs. It is designed primarily to display models and films in which they were featured in. 
+Films_and_models is a responsive reactJS web application that consumes APIs. It is designed primarily to display models and films fetched from different APIs. 
 
 
 # What it does
 
-This is a dynamic web application that display names of models and titles of films available in database. Response is gotten from API. This application allows you to find out details about films and models when you click on any the 'details' button on each film or model row. The model names are also links that takes you to a page with details on the model. You can navigate to other pages as well by following the links underneath each card.
+This is a dynamic web application that display names and physical features of models. Titles of available films each model acted in are also displayed on a dedicated page. Response is gotten from APIs fetched using JavaScript. This application allows you to find out details about films and models when you click on any the 'details' button on each film or model row. The model names are also links that takes you to a page with details on the model. You can navigate to other pages as well by following the links underneath each card.
 
 An improvement on this version of the application will accept names of models or title of films in a search bar, check to see if they are available in the database, and returns data if available. In a case where data cannot be found, a message is sent to inform the user of the request error.
 
@@ -22,9 +22,7 @@ The following frameworks were used for faster development of the web application
 
 # Challenges I faced
 
-While implementing the web application, the major challenge I encountered was; 
-
-- Creating logics to fetch multiple APIs with certain constraints asynchronously.  
+While implementing this web application, the major challenge I encountered was creating logics to fetch nested objects and arrays with multiple urls and certain constraints asynchronously.  Challenging but interesting as I had opportunities to utilize some of my learnings on JavaScript.
 
 
 # How to install and run the web application locally on your machine
@@ -53,7 +51,7 @@ You can switch to any page desired at anytime using the navigation tab.
 
 # Credits
 
-This web application was solely implemented by me following the XXXX XXX XXXXX requirements. I have drawn inspiration from a couple of resources which includes:
+This web application was solely implemented by me following the XXXX XXX XXXXX requirements. Background image was gotten from upslash website and attribution was done in the app's html and css page it was used. I drew inspiration from a couple of resources which includes:
 
 websites:
 - https://unsplash.com/
