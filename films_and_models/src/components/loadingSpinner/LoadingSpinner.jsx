@@ -3,6 +3,7 @@ import "./LoadingSpinner.css";
 import Spinner from "react-bootstrap/Spinner";
 
 const LoadingSpinner = () => {
+  
   return (
     <div className="my-auto loadingSpinner">       
         <div className="row mx-auto my-auto">
@@ -18,6 +19,6 @@ const LoadingSpinner = () => {
         </div>
   </div>
   )
-}
+};
 
 export default LoadingSpinner;

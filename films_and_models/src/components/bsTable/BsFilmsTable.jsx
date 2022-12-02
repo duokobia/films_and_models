@@ -15,13 +15,11 @@ const BsFilmsTable = () => {
         try{
             const res = await fetch(url);
             const data = await res.json();
-            let v = data.results;
-            v = v.sort((a, b) => {
-              console.log(a.episode_id, b.episode_id);
-              return a.episode_id < b.episode_id;
+            let filmsList = data.results;
+            filmsList = filmsList.sort((a, b) => {
+              return a.episode_id - b.episode_id;
             });
-            console.log(v);
-            setFilms(v);
+            setFilms(filmsList);
             setLoading(true);
         }catch(err){
             console.error(err)
@@ -80,7 +78,6 @@ const BsFilmsTable = () => {
           }
         </div> 
     </>
-
   )
 };
 

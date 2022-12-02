@@ -13,9 +13,8 @@ import ModelsInFilmShelf from "./components/shelf/ModelsInFilmShelf"
 import ErrorHandlingPage from "./pages/errorHandlingPage/ErrorHandlingPage";
 
 
-
-
 const App = () => {
+
   return (
     <>
      <Header />
@@ -30,8 +29,8 @@ const App = () => {
     </Routes>
     <Footer />
   </>
-
   );
-}
+  
+};
 
 export default App;

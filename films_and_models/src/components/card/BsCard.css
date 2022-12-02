@@ -1,58 +1,67 @@
 .allModelsInAFilmTitle{
-  margin: auto;
+  margin: 0 auto;
   width: 50%;
 }
 #scroll-container {
-    margin: auto;
-    border: 3px solid darkgray;
-    font-size: 1.3rem;
-    color: red;
-    border-radius: 5px;
-    padding: 5px;
-    width: 50%;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+  margin: auto;
+  border: 0.08rem solid darkgray;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  color: red;
+  padding: 0.25rem;
+  width: 50%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
   
-  #scroll-text {
-    /* animation properties */
+  -moz-animation: my-animation 50s linear infinite;
+  -webkit-animation: my-animation 50s linear infinite;
+  animation: my-animation 50s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+  
+@keyframes my-animation {
+  from {
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    
-    -moz-animation: my-animation 50s linear infinite;
-    -webkit-animation: my-animation 50s linear infinite;
-    animation: my-animation 50s linear infinite;
   }
-  
-  /* for Firefox */
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-}
+};
+
 @media only screen and (max-width: 50rem) {
+  #scroll-container {
+    border-radius: 3px;
+    padding: 7px;
+    width: 50%;
+  }
+};
+
+@media only screen and (max-width: 25rem) {
   #scroll-container {
     border-radius: 3px;
     padding: 7px;
     width: 94%;
   }
-}
+};

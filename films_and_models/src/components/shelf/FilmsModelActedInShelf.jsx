@@ -1,4 +1,5 @@
 import React from "react";
+import pageTitle from "../../assets/data/PageTitles";
 import BsFilmsModelActedInTable from "../bsTable/BsFilmsModelActedInTable";
 import PageContentTitle from "../pageContentTitle/PageContentTitle";
 
@@ -7,9 +8,10 @@ const FilmsModelActedInShelf = () => {
   
   return (
     <>
-      <PageContentTitle title = "All films your favourite model acted in."/>
+      <PageContentTitle title = {pageTitle.allFilmsActedIn} />
       <BsFilmsModelActedInTable />
     </>
   )
 };
+
 export default FilmsModelActedInShelf;

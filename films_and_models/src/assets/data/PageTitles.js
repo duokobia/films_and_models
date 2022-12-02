@@ -1,22 +1,11 @@
-const pageTitle = [
-    {
-        id: 1,
-        film: "Models featured in target film.",
-    },
-    {
-        id: 2,
-        films: "Models featured in target film.",
-    },
-    {
-        id: 3,
-        model: "Details of your favourite model of the year."
-    },
-    {
-        id: 4,
-
-        models: "Top 10 models of the year and their details."
-    },
-];
+const pageTitle = {
+    film: "Details of your favourite film.",
+    films: "Your favourite films' collection.",
+    model: "Details of your favourite model.",
+    models: "Models and their details.",
+    allFilmsActedIn: "All films your favourite model acted in.",
+    allModelsInThisfilm: "All models in this film.",
+  };
 
 export default pageTitle;
 

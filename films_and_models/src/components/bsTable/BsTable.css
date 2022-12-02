@@ -2,7 +2,7 @@
     padding-top: 1.8rem;
     overflow-x: none;
     overflow-y: auto;
-}
+};
 
 @media only screen and (max-width: 50rem) {
     .loadingSpinner{
@@ -11,4 +11,4 @@
     .loadingMessage{
         font-size: 1.2rem;
     }
-  }
+  };

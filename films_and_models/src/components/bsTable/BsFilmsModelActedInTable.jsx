@@ -13,10 +13,12 @@ const BsFilmsModelActedInTable = () => {
   const filmsInData = async () => {
     try{
       let allFilms = await Promise.all(urls.map(url => fetch(url)));
-      let nestedFilmsUrl = await Promise.all(allFilms.map(allFilm => allFilm.json()))
+      let nestedFilmsUrl = await Promise.all(allFilms.map(allFilm => allFilm.json()));
+      nestedFilmsUrl = nestedFilmsUrl.sort((a, b) => {
+        return a.episode_id - b.episode_id;
+      });
       setFilmsIn(nestedFilmsUrl);
       setLoading(true);
-      console.log(nestedFilmsUrl);
     }catch(err){
         console.error(err)
     }
@@ -36,8 +38,8 @@ const BsFilmsModelActedInTable = () => {
         <td>{film.release_date}</td>
         <td>
             <Link 
-                to = {`/films/${film.episode_id}`}
-                state = {{urls: film.characters}}>
+                to = {`/films/${film.episode_id}/${film.title}/`}
+                state = {{urls: film.characters, crawl : film.opening_crawl}}>
                   <button type="button" class="btn btn-success">
                       Details
                   </button>
@@ -74,6 +76,6 @@ const BsFilmsModelActedInTable = () => {
    
     </>
   )
-}
+};
 
 export default BsFilmsModelActedInTable;

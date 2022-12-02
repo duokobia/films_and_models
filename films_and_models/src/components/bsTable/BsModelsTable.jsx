@@ -24,9 +24,6 @@ const BsModelsTable = () => {
     };
  
  // To trigger querry when the page loads, the useEffect hook is used
-//  https://www.swapi.tech/api/people/1
-// "https://swapi.dev/api/people/1/"
-
 
     useEffect(() => {
         LoadModelsData();

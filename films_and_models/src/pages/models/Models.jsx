@@ -3,10 +3,12 @@ import ModelsShelf from "../../components/shelf/ModelsShelf";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Models = () => {
+
   return (
     <div className="models">
-    <ModelsShelf />
- </div>
+        <ModelsShelf />
+    </div>
   )
 };
+
 export default Models;

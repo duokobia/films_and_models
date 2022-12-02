@@ -20,11 +20,8 @@ const ModelDetailsCard = () => {
         const res = await fetch(url);
         const data = await res.json();
         const {properties, uid} = data.result;
-        console.log("response", properties.url);
-        console.log("uid", uid);
         setModel(properties);
         setUid(uid);
-        console.log("details", properties);
         getModelFilmsUrl(uid);
         setLoading(true);
     }catch(err){
@@ -39,8 +36,7 @@ const ModelDetailsCard = () => {
       setFilmUrls(data.films); 
     }catch(err){
       console.error(err)
-  }
-   
+    }
   };
 
   useEffect(() => {
@@ -53,9 +49,9 @@ const ModelDetailsCard = () => {
     <>
     {Loading ? ( 
           <div className="container-fluid col-xs-12 col-lg-8 mt-2 min-vh-100 pb-5">
-             <div className="row pb-2 allModelsInAFilmTitle"><h3 className="d-flex align-item-center justify-content-center">Model:<span className="ms-3">{model.name}</span></h3></div>
+             <div className="row pb-2 allModelsInAFilmTitle"><h3 className="d-flex align-item-center justify-content-center text-secondary fs-4 fw-bold">Model:<span className="ms-3 text-nowrap">{model.name}</span></h3></div>
             <div className="row"> 
-                <div className="col-xs-12 col-lg-6 my-4 mx-auto">
+                <div className="col-xs-12 col-md-6 my-4 mx-auto">
                       <Card className="text-bg-light mb-5">
                           <Card.Body className="mt-3 mb-3 fs-5 mx-auto">
                           <Card.Text className="mb-4" >
@@ -86,6 +82,6 @@ const ModelDetailsCard = () => {
       }
     </>
   )
-}
+};
 
 export default ModelDetailsCard;

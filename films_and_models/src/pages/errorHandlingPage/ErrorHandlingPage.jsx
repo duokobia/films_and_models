@@ -5,10 +5,10 @@ import "./ErrorHandlingPage.css";
 const ErrorHandlingPage = () => {
 
   return (
-    <div className="container-fluid bg-dark text-danger ">
+    <div className="container-fluid bg-dark text-danger">
        
       <div className="row errorPage">
-        <div className="col-xs-12 col-lg-8 px-5 errorArticle" >
+        <div className="col-xs-12 col-lg-8 px-5 errorArticle">
             <p className="errorParagraphBold"> 
                 <span className="my-5">Oops!</span>
                 <span>404 error!</span>
@@ -20,4 +20,5 @@ const ErrorHandlingPage = () => {
     </div>
   )
 };
+
 export default ErrorHandlingPage;  
