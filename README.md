@@ -1,11 +1,11 @@
 # films_and_models
 
-Films_and_models is a responsive reactJS web application that consumes public API. It is designed primarily to display models and films in which they were featured in. 
+Films_and_models is a responsive reactJS web application that consumes APIs. It is designed primarily to display models and films in which they were featured in. 
 
 
 # What it does
 
-This is a dynamic web application that display names of models and titles of films available in database. Response is gotten from a public API. This application allows you to find out details about films and models when you click on any the 'details' button beneath each film or model.
+This is a dynamic web application that display names of models and titles of films available in database. Response is gotten from API. This application allows you to find out details about films and models when you click on any the 'details' button on each film or model row. The model names are also links that takes you to a page with details on the model. You can navigate to other pages as well by following the links underneath each card.
 
 An improvement on this version of the application will accept names of models or title of films in a search bar, check to see if they are available in the database, and returns data if available. In a case where data cannot be found, a message is sent to inform the user of the request error.
 
@@ -16,17 +16,15 @@ The following frameworks were used for faster development of the web application
 
 - ReactJs
 - React-router-dom v6
-- Bootstrap v5.2
-- Axios
+- React-Bootstrap v5.2
+
 
 
 # Challenges I faced
 
-While implementing the web application, the following were the challenges I encountered; 
+While implementing the web application, the major challenge I encountered was; 
 
-- Challenge one
-- Challenge two
-- Challenge three
+- Creating logics to fetch multiple APIs with certain constraints asynchronously.  
 
 
 # How to install and run the web application locally on your machine
@@ -48,9 +46,7 @@ That is it! The application should run on your local server.
 
 # How to use the web application
 
-From the landing page, click on any of the tabs in the navigation bar to go to their respective pages. These pages each contains cards with brief information about what their names connote. For example, clicking on the 'Models' tab takes you to a new page that displays available models inside cards in grid form. To get more details about each model, click on the 'details' button in each card. This will take you to another page where details on the model clicked is displayed.
-
-While in the desired page, you will see a couple of related films displayed below the model details. Hover your cursor on them to find out each link. Click on any of the links to find out more information about the film described in the link.
+From the landing page, click on any of the tabs in the navigation bar to go to their respective pages. Each page contains either a table or card with heading giving information about the page's content. For example, clicking on the 'Models' tab takes you to a new page with heading "Models and their details". Clicking on each details button re-route you to a page that displays the model's details in a card. You can click on the links to find out more as described by each link.
 
 You can switch to any page desired at anytime using the navigation tab.  
 
@@ -66,7 +62,8 @@ websites:
 - https://businessnamegenerator.com/project-name-generator/
 
 bloggers:
-- https://www.freecodecamp.org/
+- https://www.javascripttutorial.net/javascript-fetch-api/
+- https://www.freecodecamp.org/news/how-to-make-api-calls-with-fetch/
 
 vbloggers:
 - Youtube resources.
