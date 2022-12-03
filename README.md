@@ -34,9 +34,11 @@ To run the app locally, please follow the steps below:
   
 2. cd films_and_models
 
-3. npm install
+3. Then cd films_and_models again (Apologies on my folder naming style)
 
-4. npm start
+4. npm install
+
+5. npm start
 
 That is it! The application should run on your local server on http://localhost:3000.
 
